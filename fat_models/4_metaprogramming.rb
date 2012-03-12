@@ -1,12 +1,3 @@
-class User < ActiveRecord::Base
-  has_one :milestone
-
-  delegate :has_completed_a,
-           :has_completed_b,
-           :has_completed_c,
-           :to => :milestone,
-           :allow_nil => true
-
 # Following the law of demeter,
 # this might be a bad idea
 #
@@ -23,6 +14,15 @@ class User < ActiveRecord::Base
 #
 # That's fine but can get messy quickly
 # DRY it up with a little metaprogramming
+
+class User < ActiveRecord::Base
+  has_one :milestone
+
+  delegate :has_completed_a,
+           :has_completed_b,
+           :has_completed_c,
+           :to => :milestone,
+           :allow_nil => true
 
   Milestone.MILESTONES.each do |name|
     define_method "had_#{name}" do

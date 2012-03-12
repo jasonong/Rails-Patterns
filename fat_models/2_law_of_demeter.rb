@@ -1,6 +1,3 @@
-class User < ActiveRecord::Base
-  has_one :milestone
-
 # The following is brittle coz
 # has_completed_a can blow up
 # if user.milestone is nil
@@ -18,6 +15,9 @@ class User < ActiveRecord::Base
 #
 # Bonus: makes the user milestone
 # testable and stub friendly
+
+class User < ActiveRecord::Base
+  has_one :milestone
 
   def has_completed_a
     milestone.try(:has_completed_a)

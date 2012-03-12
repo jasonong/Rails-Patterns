@@ -1,9 +1,9 @@
-class User < ActiveRecord::Base
-  has_one :milestone
-
 # The User's instance method
 # be delegated to Milestone so
 # we don't have to define them
+
+class User < ActiveRecord::Base
+  has_one :milestone
 
   delegate :has_completed_a,
            :has_completed_b,
