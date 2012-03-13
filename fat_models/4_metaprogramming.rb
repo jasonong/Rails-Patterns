@@ -1,17 +1,17 @@
 # Following the law of demeter,
 # this might be a bad idea
-#
-# milestone = user.milestone
-# milestone.has_completed_a = true
-# milestone.save
-#
+
+milestone = user.milestone
+milestone.has_completed_a = true
+milestone.save
+
 # You could delegate this to a
 # User's instance method
-#
-# def had_completed_a
-#  ...
-# end
-#
+
+def had_completed_a
+ ...
+end
+
 # That's fine but can get messy quickly
 # DRY it up with a little metaprogramming
 

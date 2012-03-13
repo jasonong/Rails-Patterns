@@ -1,18 +1,18 @@
 # The following is brittle coz
 # has_completed_a can blow up
-# if user.milestone is nil
-#
-# user.milestone.has_completed_a
-#
+# if user's milestone is nil
+
+user.milestone.has_completed_a
+
 # This is slightly better
-#
-# user.milestone.try(:has_completed_a)
-#
+
+user.milestone.try(:has_completed_a)
+
 # Reduce the number of dots by
 # adding it as User's instance method
-#
-# user.has_completed_a
-#
+
+user.has_completed_a
+
 # Bonus: makes the user milestone
 # testable and stub friendly
 
