@@ -24,7 +24,7 @@ end
 
 class User < ActiveRecord::Base
 
-  def siimilar_users
+  def similar_users
     User.exclude(self)
         .has_voted_at_least_a_product
         .in_same_cluster_as(self)

@@ -6,7 +6,7 @@
 # Another benefit of using scopes is
 # displaying clearer intent
 
-def siimilar_users
+def similar_users
   User.exclude(self)
       .has_voted_at_least_a_product
       .in_same_cluster_as(self)
