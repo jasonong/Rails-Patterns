@@ -37,7 +37,7 @@ end
 class Milestone < ActiveRecord::Base
   has_many :users
 
-  MILESTONES = %w{ has_completed_a has_completed_b has_completed_c }
+  MILESTONES = %w{ completed_a completed_b completed_c }
 
 # Attributes
 # has_completed_a :boolean
