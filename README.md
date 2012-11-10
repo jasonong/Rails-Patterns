@@ -18,4 +18,4 @@ Sections
 
 ### Anti-Patterns
 
-* [Fat Models] (https://github.com/jasonong/Rails-Antipatterns/tree/master/fat_models)
+* [Fat Models] (https://github.com/jasonong/Rails-Patterns/tree/master/fat_models)
