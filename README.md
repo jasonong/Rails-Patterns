@@ -19,3 +19,5 @@ Sections
 ### Anti-Patterns
 
 * [Fat Models] (https://github.com/jasonong/Rails-Patterns/tree/master/fat_models)
+* [Fat Parameters] (https://github.com/jasonong/Rails-Patterns/tree/master/fat_parameters)
+* [Fat Conditionals] (https://github.com/jasonong/Rails-Patterns/tree/master/fat_conditionals)
